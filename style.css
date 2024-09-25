@@ -1,61 +1,106 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>William Luik's Data Science Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <div class="container">
-            <h1>William Luik's Data Science Portfolio</h1>
-            <nav>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
 
-    <section id="about" class="section">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>Hello! I am William Luik, a senior at Washington and Lee University, majoring in Physics and Economics with minors in Data Science and Computer Science. Welcome to my portfolio showcasing the projects I've completed as part of my Data Science minor.</p>
-        </div>
-    </section>
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
 
-    <section id="projects" class="section">
-        <div class="container">
-            <h2>Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <h3>Project Title 1</h3>
-                    <p>Description of the project goes here. Highlight key technologies and methodologies used (e.g., Python, Machine Learning).</p>
-                </div>
-                <div class="project-card">
-                    <h3>Project Title 2</h3>
-                    <p>Description of the project goes here. Highlight key technologies and methodologies used.</p>
-                </div>
-                <!-- Add more project cards as needed -->
-            </div>
-        </div>
-    </section>
+/* Header */
+header {
+    background-color: #0077b6;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
 
-    <section id="contact" class="section">
-        <div class="container">
-            <h2>Contact</h2>
-            <p>If you'd like to reach out, feel free to <a href="mailto:youremail@example.com">email me</a>.</p>
-        </div>
-    </section>
+header h1 {
+    margin: 0;
+}
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 William Luik</p>
-        </div>
-    </footer>
-</body>
-</html>
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Sections */
+.section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 2.5em;
+    color: #0077b6;
+    margin-bottom: 20px;
+}
+
+.section p {
+    font-size: 1.1em;
+    line-height: 1.6em;
+}
+
+/* Projects */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.2s;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+.project-card h3 {
+    color: #0077b6;
+    margin-top: 0;
+}
+
+/* Contact */
+a {
+    color: #0077b6;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #0077b6;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    margin-top: 40px;
+}
