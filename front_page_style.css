@@ -1,0 +1,34 @@
+/* New Intro Section Styles */
+.intro {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space out the elements */
+    align-items: center; /* Center items vertically */
+    padding: 40px; /* Add padding around the section */
+}
+
+.intro-text {
+    flex: 1; /* Take up space on the left */
+    max-width: 50%; /* Limit the width */
+}
+
+.intro-text h2 {
+    font-size: 3em; /* Large font for your name */
+    margin: 0; /* Remove default margin */
+}
+
+.intro-text h3 {
+    font-size: 1.5em; /* Subheader size */
+    color: #0066cc; /* Match subheader color to theme */
+}
+
+.intro-image {
+    flex: 1; /* Take up space on the right */
+    max-width: 50%; /* Limit the width */
+    text-align: center; /* Center the image */
+}
+
+.intro-image img {
+    max-width: 100%; /* Make image responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners for image */
+}
