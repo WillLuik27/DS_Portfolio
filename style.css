@@ -1,99 +1,82 @@
-/* General page styling */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
     margin: 0;
     padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
 header {
-    background-color: #4CAF50; /* Green header */
+    background-color: #0073e6;
     color: white;
-    padding: 1rem;
+    padding: 20px;
     text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 20px;
+    margin: 0 15px;
 }
 
 nav ul li a {
-    text-decoration: none;
     color: white;
+    text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s ease-in-out;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
 }
 
 nav ul li a:hover {
-    color: #ddd;
-}
-
-h1, h2 {
-    text-align: center;
-    color: #333;
+    background-color: #005bb5;
 }
 
 section {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-}
-
-p, ul {
-    line-height: 1.6;
-    font-size: 1.1rem;
-}
-
-ul {
-    padding-left: 20px;
-}
-
-ul li {
-    margin-bottom: 10px;
-}
-
-footer {
-    background-color: #4CAF50;
-    color: white;
+    padding: 50px;
     text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
 }
 
-/* Button styling */
+section h2 {
+    color: #0073e6;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
 button {
-    background-color: #4CAF50;
-    border: none;
+    background-color: #0073e6;
     color: white;
-    padding: 10px 20px;
-    text-align: center;
-    font-size: 16px;
-    margin: 10px auto;
-    cursor: pointer;
+    border: none;
+    padding: 15px 30px;
     border-radius: 5px;
-    transition: background-color 0.3s ease-in-out;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #005bb5;
 }
 
-/* Transitions for hover effects */
-a {
-    transition: color 0.3s ease-in-out;
-}
-
-a:hover {
-    color: #4CAF50;
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
