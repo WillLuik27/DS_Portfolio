@@ -1,19 +1,21 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    color: #333; /* Dark Gray for text */
-    background-color: #eaeaea; /* Mellow light gray background */
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
+    background-image: url('background.png'); /* Set your background image */
+    background-size: cover; /* Cover the entire screen */
+    background-position: center; /* Center the image */
+    background-attachment: fixed; /* Fixed attachment for parallax effect */
+    color: white; /* Change text color for better visibility */
+    font-family: Arial, sans-serif; /* General font for the body */
+    margin: 0; /* Remove default margins */
+    padding: 0; /* Remove default padding */
+    height: 100vh; /* Ensure the body takes full height */
 }
 
-/* Header */
+/* Style for the header */
 header {
-    background-color: #0066cc; /* Slightly lighter blue */
-    color: white;
-    padding: 20px 0;
-    text-align: center;
+    background-color: rgba(4, 79, 177, 0.7); /* Dark background for the header */
+    padding: 20px; /* Padding around the header */
+    text-align: center; /* Center the header text */
 }
 
 header h1 {
@@ -43,16 +45,17 @@ nav ul li a:hover {
 
 /* Main Section */
 section {
-    background-color: white; /* White background for content sections */
-    padding: 40px 20px;
-    text-align: center;
-    margin: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 20px; /* Padding around the section */
+    background-color: rgba(0, 0, 0, 0.93); /* Dark background for section */
+    margin: 20px; /* Add margin for spacing */
+    border-radius: 10px; /* Rounded corners for the section */
 }
 
+/* Headings */
 h2 {
     font-size: 2em;
-    color: #0066cc;
+    color: #0066cc; /* Blue color for h2 */
+    text-align: center;
 }
 
 p {
@@ -75,17 +78,22 @@ button:hover {
     background-color: #005bb5; /* Darker blue on hover */
 }
 
-/* Footer */
+/* Style for footer */
 footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+    text-align: center; /* Center footer text */
+    padding: 10px; /* Padding around the footer */
+    background-color: rgba(0, 0, 0, 0.7); /* Dark background for footer */
+    width: 100%; /* Full width */
 }
 
 footer p {
-    margin: 0;
+    margin: 0; /* Ensure footer text has no margin */
+}
+
+/* Image styling */
+.image-pop {
+    display: block; /* Ensures images are block elements */
+    margin: 20px auto; /* Center images with margin */
+    max-width: 80%; /* Limit the width to the container */
+    height: auto; /* Maintain aspect ratio */
 }

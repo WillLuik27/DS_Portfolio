@@ -1,160 +1,112 @@
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
-    color: #333; /* Dark Gray for text */
-    background-color: #eaeaea; /* Mellow light gray background */
+/* front_page_style.css */
+
+/* General styles */
+html, body {
+    height: 100%; /* Make sure the body and html take full height */
     margin: 0;
     padding: 0;
-    line-height: 1.6;
+    display: flex; /* Make the body a flex container */
+    flex-direction: column; /* Stack child elements vertically */
 }
 
-/* Header */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Light grey background */
+    color: #333; /* Dark grey text */
+}
+
+/* Header styles */
 header {
-    background-color: #0066cc; /* Slightly lighter blue */
-    color: white;
+    background-color: #007bff; /* Blue background */
+    color: white; /* White text */
     padding: 20px 0;
     text-align: center;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
-}
-
 nav ul {
+    list-style-type: none; /* Remove bullet points */
     padding: 0;
-    list-style: none;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 15px;
+    display: inline; /* Inline list items */
+    margin: 0 15px; /* Space between links */
 }
 
 nav ul li a {
-    color: white;
-    text-decoration: none;
+    color: white; /* White link color */
+    text-decoration: none; /* Remove underline */
     font-weight: bold;
 }
 
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
-/* New Intro Section Styles */
+/* Intro section styles */
 .intro {
-    display: flex; /* Use flexbox for layout */
-    justify-content: space-between; /* Space out the elements */
-    align-items: center; /* Center items vertically */
-    padding: 40px; /* Add padding around the section */
-}
-
-.intro-text {
-    flex: 1; /* Take up space on the left */
-    max-width: 50%; /* Limit the width */
-}
-
-.intro-text h2 {
-    font-size: 3em; /* Large font for your name */
-    margin: 0; /* Remove default margin */
-}
-
-.intro-text h3 {
-    font-size: 1.5em; /* Subheader size */
-    color: #0066cc; /* Match subheader color to theme */
-}
-
-.intro-image {
-    flex: 1; /* Take up space on the right */
-    max-width: 50%; /* Limit the width */
-    text-align: center; /* Center the image */
-}
-
-.intro-image img {
-    max-width: 100%; /* Make image responsive */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 10px; /* Rounded corners for image */
-}
-
-/* Main Section */
-section {
-    background-color: white; /* White background for content sections */
+    flex: 1; /* Take up remaining space in the body */
     padding: 40px 20px;
     text-align: center;
-    margin: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
-h2 {
-    font-size: 2em;
-    color: #0066cc; /* Match header color */
+.intro h2 {
+    color: #007bff; /* Blue text for the main name */
 }
 
-p {
-    font-size: 1.2em;
-    margin-bottom: 20px;
+.intro h3 {
+    color: #555; /* Darker grey for the subtitle */
 }
 
-/* Button Styling */
+.intro h4 {
+    color: #777; /* Lighter grey for the major/minor */
+}
+
+.intro p {
+    margin: 20px 0;
+}
+
+/* Flex container styles */
+.intro-container {
+    display: flex; /* Enable flexbox */
+    align-items: center; /* Vertically center items */
+    justify-content: center; /* Center items horizontally */
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+/* Image styles */
+.intro-image {
+    max-width: 50%; /* Limit the image width to 50% */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 20px; /* Space between the image and text */
+    border-radius: 10px; /* Optional: Rounded corners for aesthetics */
+}
+
+/* Text styles */
+.intro-text {
+    max-width: 50%; /* Limit the text width to 50% */
+    text-align: center; /* Align text to the left */
+    margin-left: 20px;
+}
+
+
+
+
+/* Button styles */
 button {
-    background-color: #0066cc; /* Match header color */
-    color: white;
-    border: none;
-    padding: 15px 30px;
-    font-size: 1.2em;
-    cursor: pointer;
-    border-radius: 5px;
+    background-color: #007bff; /* Blue button background */
+    color: white; /* White text */
+    border: none; /* No border */
+    padding: 10px 20px; /* Padding inside button */
+    cursor: pointer; /* Pointer on hover */
+    font-size: 16px; /* Font size */
 }
 
 button:hover {
-    background-color: #005bb5; /* Darker blue on hover */
+    background-color: #0056b3; /* Darker blue on hover */
 }
 
-/* Footer */
+/* Footer styles */
 footer {
-    background-color: #333; /* Dark footer background */
-    color: white;
+    background-color: #333; /* Dark grey background */
+    color: white; /* White text */
     text-align: center;
-    padding: 10px;
-    position: relative; /* Adjust positioning to avoid overlap */
-    width: 100%;
-}
-
-footer p {
-    margin: 0;
-}
-
-.gallery {
-    text-align: center;
-    padding: 40px 20px;
-    background-color: white;
-}
-
-.gallery-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 20px; /* Space between images */
-}
-
-.gallery-item {
-    width: 30%; /* Set width for each image */
-    transition: transform 0.3s ease-in-out; /* Smooth hover effect */
-}
-
-.gallery-item img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
-}
-
-.gallery-item:hover {
-    transform: scale(1.10); /* Slight zoom on hover */
-}
-
-.gallery-item p {
-    margin-top: 10px;
-    font-size: 1.1em;
-    color: #333;
+    padding: 10px 0;
+    width: 100%; /* Full width */
 }

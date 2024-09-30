@@ -19,32 +19,21 @@
     </header>
 
     <section class="intro">
-        <div class="intro-text">
-            <h2>William Luik</h2>
-            <h3>Student-athlete at W&L</h3>
-            <h4>Major: physics | Minor: data science & computer science</h4>
-            <p>Welcome to my portfolio website! Explore my projects and learn more about my time at Washignton and Lee.</p>
-            <button onclick="window.location.href='projects.html'">View My Projects</button>
-        </div>
-        <section class="gallery">
-            <h2>Featured Projects</h2>
-            <div class="gallery-grid">
-                <div class="gallery-item">
-                    <img src="Luik_linkedin.jpg" alt="Project 1">
-                    <p>Project 1 Description</p>
-                </div>
-                <div class="gallery-item">
-                    <img src="Luik_hiking.jpg" alt="Project 2">
-                    <p>Project 2 Description</p>
-                </div>
-                <div class="gallery-item">
-                    <img src="Luik_soccer.png" alt="Project 3">
-                    <p>Project 3 Description</p>
-                </div>
-                <!-- Add more gallery items here -->
+        <div class="intro-container"> <!-- New flex container -->
+            <img src="Luik_linkedin.jpg" alt="intro image" class="intro-image"> <!-- Image -->
+            <div class="intro-text"> <!-- Text container -->
+            <div class="name-container"> <!-- New container for name and title -->
+                <h2 class="name">William Luik</h2>
+                <h3 class="title">Student-athlete at W&L</h3>
             </div>
-        </section>
-        
+                <h4>Major: physics | Minor: data science & computer science</h4>
+                <p>Welcome to my portfolio website! Explore my projects and learn more about my time at Washington and Lee.</p>
+                <button onclick="window.location.href='projects.html'">View My Projects</button>
+            </div>
+        </div>
+    </section>
+    
+
 
     <footer>
         <p>© 2024 William Luik</p>
