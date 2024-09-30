@@ -123,3 +123,38 @@ footer {
 footer p {
     margin: 0;
 }
+
+.gallery {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: white;
+}
+
+.gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px; /* Space between images */
+}
+
+.gallery-item {
+    width: 30%; /* Set width for each image */
+    transition: transform 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
+}
+
+.gallery-item:hover {
+    transform: scale(1.10); /* Slight zoom on hover */
+}
+
+.gallery-item p {
+    margin-top: 10px;
+    font-size: 1.1em;
+    color: #333;
+}
