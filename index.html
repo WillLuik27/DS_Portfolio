@@ -12,12 +12,19 @@
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="projects/project1.html">Project 1</a></li>
-                <li><a href="projects/project2.html">Project 2</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Projects</a>
+                    <div class="dropdown-content">
+                        <a href="projects/fire_page.html">Fire Model</a>
+                        <a href="projects/scheduler_page.html">Scheduling Optimizer</a>
+                        <!-- Add more project links here -->
+                    </div>
+                </li>
                 <li><a href="about.html">About Me</a></li>
             </ul>
         </nav>
     </header>
+    
 
     <section class="intro">
         <div class="intro-container"> <!-- New flex container -->
@@ -29,7 +36,7 @@
             </div>
                 <h4>Major: physics | Minor: data science & computer science</h4>
                 <p>Welcome to my portfolio website! Explore my projects and learn more about my time at Washington and Lee.</p>
-                <button onclick="window.location.href='projects.html'">View My Projects</button>
+        
             </div>
         </div>
     </section>

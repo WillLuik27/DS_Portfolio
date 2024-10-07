@@ -98,6 +98,31 @@ footer p {
     height: auto; /* Maintain aspect ratio */
 }
 
+/* Centering the navigation menu */
+nav {
+    text-align: center;  /* This will center the ul inside the nav */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;  /* Make the ul behave like an inline element */
+}
+
+nav ul li {
+    display: inline-block;  /* Ensure the list items remain in a row */
+    float: none;  /* Remove the float to avoid it sticking to the left */
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding: 14px 20px;
+    display: block;
+    color: black;
+}
+
+
 /* Dropdown container */
 .dropdown {
     position: relative;
@@ -106,9 +131,7 @@ footer p {
 
 /* Dropdown button */
 .dropbtn {
-    background-color: inherit;
-    border: none;
-    cursor: pointer;
+    padding: 14px 20px;
 }
 
 /* Dropdown content (hidden by default) */
@@ -132,12 +155,12 @@ footer p {
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {background-color: #f1f1f1}
 
-/* Show the dropdown content on hover */
+/* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
-/* Change the background color of the dropdown button when the dropdown content is shown */
+/* Change the color of the dropdown button when the dropdown is visible */
 .dropdown:hover .dropbtn {
-    background-color: #3e8e41;
+    background-color: #ddd;
 }
