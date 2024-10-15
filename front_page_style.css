@@ -17,8 +17,8 @@ body {
 
 /* Header styles */
 header {
-    background-color: #007bff; /* Blue background */
-    color: white; /* White text */
+    background-color: rgba(4, 79, 177, 0.7); /* Blue background */
+    color: black; /* White text */
     padding: 20px 0;
     text-align: center;
 }
@@ -35,7 +35,7 @@ nav ul li {
 
 nav ul li a {
     color: white; /* White link color */
-    text-decoration: none; /* Remove underline */
+    /* text-decoration: none; Remove underline */
     font-weight: bold;
 }
 
@@ -44,6 +44,11 @@ nav ul li a {
     flex: 1; /* Take up remaining space in the body */
     padding: 40px 20px;
     text-align: center;
+}
+
+header h1 {
+    margin: 2;
+    font-size: 2.5em;
 }
 
 .intro h2 {
@@ -140,6 +145,7 @@ nav ul li a {
 /* Dropdown container */
 .dropdown {
     position: relative;
+    display: inline-block; 
 }
 
 /* Dropdown button */

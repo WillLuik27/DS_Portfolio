@@ -4,7 +4,7 @@ body {
     background-size: cover; /* Cover the entire screen */
     background-position: center; /* Center the image */
     background-attachment: fixed; /* Fixed attachment for parallax effect */
-    color: white; /* Change text color for better visibility */
+    color: black; /* Change text color for better visibility */
     font-family: Arial, sans-serif; /* General font for the body */
     margin: 0; /* Remove default margins */
     padding: 0; /* Remove default padding */
@@ -19,7 +19,7 @@ header {
 }
 
 header h1 {
-    margin: 0;
+    margin: 2;
     font-size: 2.5em;
 }
 
@@ -46,7 +46,7 @@ nav ul li a:hover {
 /* Main Section */
 section {
     padding: 20px; /* Padding around the section */
-    background-color: rgba(0, 0, 0, 0.93); /* Dark background for section */
+    background-color: rgba(244, 244, 244, 0.9); /* Light background with 80% opacity */
     margin: 20px; /* Add margin for spacing */
     border-radius: 10px; /* Rounded corners for the section */
 }
@@ -153,7 +153,13 @@ nav ul li a {
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown-content a:hover {
+    background-color: #ddd; 
+}
+
+.dropdown-content li {
+    list-style-type: none; /* Add this to match the first stylesheet */
+}
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
