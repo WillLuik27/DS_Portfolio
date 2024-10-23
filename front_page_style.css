@@ -141,6 +141,10 @@ nav ul li a {
     color: black;
 }
 
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
 
 /* Dropdown container */
 .dropdown {
@@ -151,7 +155,7 @@ nav ul li a {
 /* Dropdown button */
 .dropbtn {
     padding: 14px 20px;
-    background-color: #f1f1f1;
+    
     color: black;
     border: none;
     cursor: pointer;
@@ -187,6 +191,11 @@ nav ul li a {
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd; 
 }
 
 /* Change the color of the dropdown button when hovered */
