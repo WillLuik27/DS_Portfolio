@@ -170,3 +170,20 @@ nav ul li a {
 .dropdown:hover .dropbtn {
     background-color: #ddd;
 }
+
+.presentation-section {
+    text-align: center; /* Center the content horizontally */
+    padding: 20px; /* Add some space around the section */
+}
+
+.presentation-section h2 {
+    margin-bottom: 20px; /* Add space between the heading and the iframe */
+    font-size: 2em; /* Adjust heading size if needed */
+    color: #333; /* Optional: Change heading color */
+}
+
+.presentation-section iframe {
+    display: block; /* Make iframe a block element */
+    margin: 0 auto; /* Center the iframe horizontally */
+}
+
