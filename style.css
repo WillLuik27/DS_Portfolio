@@ -172,18 +172,37 @@ nav ul li a {
 }
 
 .presentation-section {
-    text-align: center; /* Center the content horizontally */
+    
     padding: 20px; /* Add some space around the section */
 }
 
+/* Presentation section styling */
+.presentation-section {
+    text-align: center; /* Center the content horizontally */
+    margin-bottom: 20px; /* Add space below the section */
+}
+
 .presentation-section h2 {
-    margin-bottom: 20px; /* Add space between the heading and the iframe */
+    margin-bottom: 20px; /* Space between heading and iframe */
     font-size: 2em; /* Adjust heading size if needed */
     color: #333; /* Optional: Change heading color */
 }
 
-.presentation-section iframe {
-    display: block; /* Make iframe a block element */
-    margin: 0 auto; /* Center the iframe horizontally */
+/* Responsive iframe container */
+.presentation-section .responsive-iframe {
+    position: relative;
+    width: 100%; /* Full width */
+    padding-top: 59.27%; /* Aspect ratio: height / width * 100% (569 / 960 = 0.5927) */
+    margin: 0 auto; /* Center the iframe container */
+}
+
+/* Responsive iframe itself */
+.presentation-section .responsive-iframe iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width of the container */
+    height: 100%; /* Full height of the container */
+    border: none; /* Remove default iframe border */
 }
 
