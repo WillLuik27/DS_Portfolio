@@ -15,6 +15,7 @@ document.write(`
                     <a href="${baseURL}house_fire_page.html">House Fire Model</a>
                     <a href="${baseURL}forest_fire_page.html">Monte Carlo - Forest Fire</a>
                     <a href="${baseURL}birthrate_page.html">Population Dynamics Model</a>
+                    <a href="${baseURL}labor_force_page.html">Male Labor Force Model</a>
                     
 
                 </div>
